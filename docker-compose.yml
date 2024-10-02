@@ -1,0 +1,8 @@
+services:
+  server:
+    container_name: server
+    image: php:8.1-apache
+    ports:
+      - 8887:80
+    volumes:
+      - ./dist:/var/www/html

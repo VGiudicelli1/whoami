@@ -1,0 +1,32 @@
+{
+    "name": "test",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite --host",
+        "build": "vue-tsc -b && vite build && npm run _merge_php_index",
+        "preview": "vite preview",
+        "_merge_php_index": "find dist -name index.html | while read file; do DIR=${file%/*}; echo \"${DIR}\t: _index.php + index.html --> index.php\"; echo '?>' >> \"${DIR}/_index.php\"; cat \"${DIR}/_index.php\" \"${DIR}/index.html\" > \"${DIR}/index.php\"; rm \"${DIR}/_index.php\" \"${DIR}/index.html\"; done",
+        "_build_if_changed": "b=$(ls -lR src public | sha1sum); a=$(cat dist/.sha1sum); if test \"$a\" != \"$b\"; then echo \"$(npm run build)\" > dist/.buildResult && echo \"$b\">dist/.sha1sum; fi; cat dist/.buildResult",
+        "auto_build": "watch -n 0 npm run _build_if_changed"
+    },
+    "dependencies": {
+        "vue": "^3.4.37",
+        "vuex": "^4.1.0"
+    },
+    "devDependencies": {
+        "@types/node": "^22.5.1",
+        "@types/react": "^18.3.4",
+        "@types/three": "^0.167.2",
+        "@vitejs/plugin-vue": "^5.1.2",
+        "postprocessing": "^6.36.0",
+        "react": "^18.3.1",
+        "three": "^0.167.1",
+        "typescript": "^5.5.4",
+        "vite": "^5.4.1",
+        "vite-plugin-glsl": "^1.3.0",
+        "vite-plugin-static-copy": "^1.0.6",
+        "vue-tsc": "^2.0.29"
+    }
+}
