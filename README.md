@@ -40,3 +40,7 @@ to deploy on your own site with ftp access:
 
 - Docker
 - npm
+
+## déployé
+
+<https://vgiudice.alwaysdata.net/whoami>
