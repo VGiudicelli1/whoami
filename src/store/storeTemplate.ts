@@ -1,4 +1,4 @@
-import { createStore } from "vuex";
+import { createStore } from 'vuex';
 
 const LS_STORE_TEMPLATE_A = "storeTemplate_a";
 

@@ -1,14 +1,12 @@
+// components
+// static documents (css, json, ...)
+import './ComponentTemplate.css';
+
 // frameworks
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue';
 
 // stores
-import { storeTemplate } from "../store/storeTemplate";
-
-// components
-
-// static documents (css, json, ...)
-import "./ComponentTemplate.css";
-
+import { storeTemplate } from '../store/storeTemplate';
 
 // functions, class, constants, ...
 

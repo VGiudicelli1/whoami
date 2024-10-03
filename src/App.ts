@@ -1,8 +1,8 @@
+import './App.css';
+
 import { defineComponent } from 'vue';
 
 import ComponentTemplate from './components/ComponentTemplate';
-
-import "./App.css";
 
 export default defineComponent({
     components: {
