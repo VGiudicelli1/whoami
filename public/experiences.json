@@ -1,0 +1,15 @@
+{
+    "1": {
+        "id": 1,
+        "tags": ["tresorier", "association"],
+        "date_debut": "2022/04/15",
+        "date_fin": "2023/04/15",
+        "duree": "1 an",
+        "poste": "Trésorier d'association étudiante",
+        "entreprise": "ENSGAGE•E•S",
+        "description": "J'ai été membre du bureau et trésorier dans une association étudiante - les ENSGAGE•E•S - qui est une association écologique et solidaire de l'ENSG, et organise des évènements visant à renforcer la cohésion des étudiants, leur entraide au quotidien, et à sensibiliser aux enjeux écologiques de notre génération.",
+        "contenu": "En tant que trésorier, j'ai assuré la bonne tenue des comptes de l'association, la budgetisation des activités, et la demande et le suivi de subventions. En tant que membre du bureau, j'ai pu co-organiser des activités telles que des ciné-débats (projection d'un film, puis animation de jeux de réflexion autoursdu sujet traité par le film, suivi d'un débat puis d'un repas), des clean-walk (regrouppement d'étudiants pour nettoyer les rues de notre campus, pour sensibiliser à l'utilisation et au devenir de nos déchets, et amorcer le sujet du zéro-déchet), la mise en place d'une bibliothèque et d'une boite à livres, la collaboration avec l'association Noisy-Liens qui propose des vêtements de qualité et de seconde main à bas prix pour les étudiants, une journée découverte de notre patrimoine à Forcalquier, ...",
+        "photos": ["./images/ensgages-logo.png", "./images/tresorier.png"],
+        "liens": ["https://www.instagram.com/ensgages/", "https://www.facebook.com/p/Les-ENSGag%25C3%25A9es-100068638040481/"]
+    }
+}

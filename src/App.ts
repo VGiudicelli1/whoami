@@ -1,16 +1,28 @@
+import './App.css';
+
 import { defineComponent } from 'vue';
 
-import ComponentTemplate from './components/ComponentTemplate';
-
-import "./App.css";
+import Experiences from './components/Experiences';
+import Qualites from './components/Qualites';
+import QuiSuisJe from './components/QuiSuisJe';
+import Formations from './components/Formations';
+import Competences from './components/Competences';
 
 export default defineComponent({
     components: {
-        ComponentTemplate,
+        Experiences,
+        Qualites,
+        QuiSuisJe,
+        Formations,
+        Competences,
     },
     template: `
     <div class="component-app">
-        <ComponentTemplate />
+        <QuiSuisJe />
+        <Formations />
+        <Competences />
+        <Qualites />
+        <Experiences />
     </div>
     `,
 });
