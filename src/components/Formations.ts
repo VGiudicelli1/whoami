@@ -1,12 +1,10 @@
 // components
 // static documents (css, json, ...)
-import './ComponentTemplate.css';
 
 // frameworks
 import { defineComponent } from 'vue';
 
 // stores
-import { storeTemplate } from '../store/storeTemplate';
 
 // functions, class, constants, ...
 
@@ -17,19 +15,14 @@ export default defineComponent({
     emits: [],
     components: {},
     data() {
-        return {
-            b: 0
-        };
+        return {};
     },
-    computed: {
-        a() {
-            return storeTemplate.state.a;
-        },
-    },
+    computed: {},
     watch: {},
     methods: {},
     template: `
-    <div class="component-ComponentTemplate">
+    <div class="component-formations">
+        <h2>Mes formations</h2>
         ...
     </div>
     `,
