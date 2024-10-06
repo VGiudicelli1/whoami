@@ -28,6 +28,7 @@ export default defineComponent({
             <li>Développeur logiciel</li>
             <li>Régisseur</li>
             <li>Technicien autio-vidéo</li>
+            Très polyvalent, je m'adapte à toutes situations, et sait proposer des solutions que ce soit pour répondre à une situation d'urgence (en particulier dans mon expérience dans l'audio-visuel) ou pour anticiper des problèmes sur le long terme
         </ul>
         <a href="./cv">Mon CV</a>
     </div>
