@@ -33,8 +33,11 @@ export default defineComponent({
             <span v-for="tag in this._experience.tags">{{ tag }}</span>
         </div>
         <span class="entreprise">{{ this._experience.entreprise }}</span>
-        <span class="dates">
+        <span class="dates" v-if="this._experience.duree">
             {{ this._experience.d_begin_str }} - {{ this._experience.d_end_str }} ({{ this._experience.duree }})
+        </span>
+        <span class="dates" v-else>
+            depuis {{ this._experience.d_begin_str }}
         </span>
         <h3>{{ this._experience.poste }}</h3>
         <p>{{ this._experience.description }}</p>

@@ -104,6 +104,7 @@ export const storeExperiences = createStore({
                 .then(r => {
                     return new Map(Object.entries(r)
                         .map(([_, doc]: [string, any]) => Experience.fromJson(doc))
+                        .filter(exp => !exp.is_null)
                         .map(exp => [exp.id, exp]));
                 })
                 .then(r => {
