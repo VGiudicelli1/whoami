@@ -24,6 +24,9 @@ export default defineComponent({
         <div class="content-box">
             <div class="bg"></div>
             <div class="content">
+                <div style="color:blue">
+                Ce site est encore en cours de développement. Pour le moment je travaille sur le fond, la forme viendra après. Toutes mes excuses pour l'aspect esthétique. Je vous souhaite néanmoins une bonne visite !
+                </div>
                 <QuiSuisJe />
                 <Formations />
                 <Competences />

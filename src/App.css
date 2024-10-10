@@ -29,7 +29,9 @@ div.component-app div.content-box div.bg {
     left: 0;
     height: 100%;
     width: 43%;
-    background-color: rgb(242, 224, 203);
+    border-radius: 0 10em 0 0;
+    box-shadow: 0 0 10px rgb(234, 184, 162);
+    background-color: rgba(242, 224, 203, 70%);
     /* overflow-y: scroll; */
 }
 
@@ -40,10 +42,13 @@ div.component-app div.content-box div.content {
     left: 50%;
     transform: translateX(-50%);
     display: block;
+    border-radius: 0.4em;
+    padding: 1em;
+    box-sizing: border-box;
     overflow: scroll;
     width: calc(min(50em, 100% - 2em));
     max-height: calc(100% - 2em);
     min-height: 30%;
-    background-color: rgb(255, 243, 197);
+    background-color: rgb(255, 249, 225);
     box-shadow: -7px 5px 8px rgba(0, 0, 0, 0.2);
 }
