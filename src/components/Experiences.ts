@@ -23,7 +23,11 @@ export default defineComponent({
     },
     computed: {
         experiences() {
-            return storeExperiences.state.experiences;
+            return [...storeExperiences.state.experiences.entries()]
+                .map(([_id, exp]) => exp)
+                .sort((exp1, exp2) => {
+                    return exp2.d_begin.getTime() - exp1.d_begin.getTime()
+                });
         }
     },
     watch: {},
@@ -40,7 +44,7 @@ export default defineComponent({
         <h2>Mes expériences</h2>
         <i @click="this.alert_not_dev">-- filtrer par date ou par mot clef</i><br>
         <i @click="this.alert_not_dev">-- rechercher un terme</i>
-        <Experience v-for="[id, experience] of this.experiences" :experience="experience" />
+        <Experience v-for="experience in this.experiences" :experience="experience" />
     </div>
     `,
 });

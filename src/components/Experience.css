@@ -5,30 +5,38 @@ div.component-experience {
     padding: 5px;
 }
 
-div.tags span {
+div.component-experience div.tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.component-experience div.tags span {
     padding: 2px 1em;
     border-radius: 1em;
     background-color: rgba(92, 255, 92, 0.57);
     margin: 2px 0.5em;
 }
 
-div.photos {
+div.component-experience div.photos {
     overflow-x: scroll;
     --square: 20em;
     display: grid;
     max-width: calc(2 * var(--square));
+    margin: auto;
 }
 
-div.photos div.photo {
+div.component-experience div.photos div.photo {
     grid-row: 1;
     width: var(--square);
     height: var(--square);
     display: block;
     position: relative;
-    background-color: gray;
+    /* background-color: gray; */
+    margin: auto;
 }
 
-div.photos div.photo img {
+div.component-experience div.photos div.photo img {
     max-width: var(--square);
     max-height: var(--square);
     position: absolute;
@@ -38,12 +46,12 @@ div.photos div.photo img {
     transform: translate(-50%, -50%);
 }
 
-div.liens {
+div.component-experience div.liens {
     display: grid;
     grid-template-columns: 1fr;
 }
 
-div.button {
+div.component-experience div.button {
     background-color: rgba(198, 198, 198, 0.439);
     cursor: pointer;
     margin: 2px 0.5em;
@@ -51,12 +59,12 @@ div.button {
     border-radius: 1em;
 }
 
-span.entreprise {
+div.component-experience span.entreprise {
     font-weight: bold;
     margin: 2px 1em;
 }
 
-span.dates {
+div.component-experience span.dates {
     font-style: italic;
     margin: 2px 1em;
 }
