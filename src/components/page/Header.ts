@@ -17,6 +17,7 @@ Niveau: entre 0 (inconnu) et 10 (parfait)
 export default defineComponent({
     data() {
         return {
+            menu:false,
         };
     },
     computed: {
@@ -27,6 +28,9 @@ export default defineComponent({
     methods: {
         select_onglet(key: string) {
             console.log(key);
+        },
+        toggle_menu() {
+            this.menu = !this.menu;
         },
     },
     template: `
@@ -43,15 +47,15 @@ export default defineComponent({
                 <span>Régisseur son</span>
             </div>
         </div>
-        <div class="btn menu">
+        <div class="btn menu" @click="this.toggle_menu">
             <span></span>
-            <span></span>
+            <span class="visible"></span>
+            <span class="visible"></span>
+            <span class="visible"></span>
             <span></span>
         </div>
-        <div class="menu">
-            <ul>
-                <li v-for="[key, value] of this.onglets" @click="this.select_onglet(key)">{{ value }}</li>
-            </ul>
+        <div class="nav menu" v-if="this.menu">
+            <div class="item" v-for="[key, value] of this.onglets" @click="this.select_onglet(key)">{{ value }}</div>
         </div>
     </div>
     `,
