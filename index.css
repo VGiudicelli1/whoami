@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "nunito";
+    src: url("./font/Nunito-VariableFont_wght.ttf");
+}
+
+
+/* 
+html,
+body {
+    position: absolute;
+    top: 0vh;
+    left: 0vh;
+    width: 100vh;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+} */

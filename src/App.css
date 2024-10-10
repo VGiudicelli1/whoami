@@ -1,8 +1,49 @@
-div.component-app {
+/* div.component-app {
     display: grid;
     grid-template-areas: "a exp" "b exp" "c exp" "d exp";
 }
 
 div.component-app>div.component-experiences {
     grid-area: exp;
+} */
+
+div.component-app {
+    display: grid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+}
+
+div.component-app div.content-box {
+    position: relative;
+}
+
+div.component-app div.content-box div.bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 43%;
+    background-color: rgb(242, 224, 203);
+    /* overflow-y: scroll; */
+}
+
+div.component-app div.content-box div.content {
+    z-index: 1;
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    overflow: scroll;
+    width: calc(min(50em, 100% - 2em));
+    max-height: calc(100% - 2em);
+    min-height: 30%;
+    background-color: rgb(255, 243, 197);
+    box-shadow: -7px 5px 8px rgba(0, 0, 0, 0.2);
 }

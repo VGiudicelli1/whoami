@@ -1,0 +1,42 @@
+div.component-header {
+    font-family: "nunito";
+    padding: 2em;
+    display: grid;
+    grid-template-columns: auto 1fr min-content;
+}
+
+div.component-header div.me {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+div.component-header div.me div {
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+div.component-header div.me div.name {
+    font-size: 2em;
+    text-align: right;
+}
+
+div.component-header div.me div.post {
+    text-align: left;
+}
+
+div.component-header div.me>span {
+    width: 2px;
+    border-radius: 1em;
+    margin: 0 1em;
+    background-color: rgb(107, 107, 107);
+}
+
+div.component-header div.name {
+    /* background-color: blue; */
+    font-size: 2em;
+}
+
+div.component-header div.menu {
+    display: none;
+}
