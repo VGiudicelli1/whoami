@@ -3,7 +3,7 @@ import { defineComponent } from "vue";
 export default defineComponent({
     template: `
     <div>
-        <h1>Accueil</h1>
+        J'ai plusieurs version de CV disponnibles, vous pouvez les consulter <a href="./cv/">ici</a>
     </div>
     `
 })

@@ -27,7 +27,8 @@ export default defineComponent({
     },
     methods: {
         select_onglet(key: string) {
-            console.log(key);
+            storeOnglets.dispatch("set_current_onglet", key);
+            this.menu = false;
         },
         toggle_menu() {
             this.menu = !this.menu;

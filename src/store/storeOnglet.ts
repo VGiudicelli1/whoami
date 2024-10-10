@@ -14,4 +14,14 @@ export const storeOnglets = createStore({
             current_onglet: "accueil"
         };
     },
+    actions: {
+        set_current_onglet(store, onglet: string) {
+            store.commit("_set_current_onglet", onglet);
+        },
+    },
+    mutations: {
+        _set_current_onglet(state, onglet: string) {
+            state.current_onglet = onglet;
+        },
+    },
 });
