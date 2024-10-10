@@ -1,0 +1,97 @@
+div.component-header {
+    font-family: "nunito";
+    padding: 2em;
+    display: grid;
+    grid-template-columns: auto 1fr min-content;
+    position: relative;
+}
+
+div.component-header div.me {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+div.component-header div.me div {
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+div.component-header div.me div.name {
+    font-size: 2em;
+    text-align: right;
+}
+
+div.component-header div.me div.post {
+    text-align: left;
+}
+
+div.component-header div.me>span {
+    width: 2px;
+    border-radius: 1em;
+    margin: 0 1em;
+    background-color: rgb(107, 107, 107);
+}
+
+div.component-header div.name {
+    /* background-color: blue; */
+    font-size: 2em;
+}
+
+div.component-header div.btn.menu {
+    /* display: none; */
+    position: absolute;
+    background-color: rgb(59, 59, 59);
+    width: 3em;
+    height: 3em;
+    border-radius: 1em;
+    top: 2em;
+    right: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+div.component-header div.btn.menu span {
+    width: 2em;
+    height: 2px;
+    border-radius: 1em;
+    display: block;
+}
+
+div.component-header div.btn.menu span.visible {
+    background-color: rgb(181, 181, 181);
+    transition: 0.1s;
+}
+
+div.component-header div.btn.menu:hover span.visible {
+    background-color: rgb(236, 236, 236);
+}
+
+div.component-header div.nav.menu {
+    z-index: 2;
+    position: absolute;
+    background-color: rgba(59, 59, 59, 80%);
+    border-radius: 1em;
+    top: 5em;
+    right: 2em;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+div.component-header div.nav.menu div.item {
+    cursor: pointer;
+    color: rgb(181, 181, 181);
+    margin: 2px;
+}
+
+div.component-header div.nav.menu div.item:hover {
+    color: rgb(236, 236, 236);
+}
