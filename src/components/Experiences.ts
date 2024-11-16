@@ -42,8 +42,8 @@ export default defineComponent({
     <div class="component-experiences">
         <!-- todo : use v-for and storage -->
         <h2>Mes expériences</h2>
-        <i @click="this.alert_not_dev">-- filtrer par date ou par mot clef</i><br>
-        <i @click="this.alert_not_dev">-- rechercher un terme</i>
+        <!--i @click="this.alert_not_dev">-- filtrer par date ou par mot clef</i><br>
+        <i @click="this.alert_not_dev">-- rechercher un terme</i-->
         <Experience v-for="experience in this.experiences" :experience="experience" />
     </div>
     `,

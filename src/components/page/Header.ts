@@ -44,8 +44,8 @@ export default defineComponent({
             <span class="v-sep"></span>
             <div class="post">
                 <span>Ingénieur géomaticien</span>
-                <span>Développeur</span>
-                <span>Régisseur son</span>
+                <span>Développeur full-stack</span>
+                <span>Régisseur audio/vidéo</span>
             </div>
         </div>
         <div class="btn menu" @click="this.toggle_menu">
