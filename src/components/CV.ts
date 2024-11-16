@@ -15,7 +15,7 @@ export default defineComponent({
             <li v-for="[name, uri] of this.cv"><a :href="uri">{{ name }}</a></li>
         </ul>
         <div v-else>
-            Vous pouvez les consulter <a href="./cv">ici</href>
+            Vous pouvez les consulter <a href="./cv">ici</a>
         </div>
     </div>
     `
