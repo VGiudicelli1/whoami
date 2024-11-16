@@ -1,6 +1,4 @@
 import { createStore } from 'vuex';
-import { List } from '../components/ListLimit';
-
 
 export const storeOnglets = createStore({
     state() {
