@@ -47,9 +47,9 @@ div.component-app div.content-box div.content {
     padding: 1em;
     box-sizing: border-box;
     overflow: scroll;
-    width: calc(min(50em, 100% - 2em));
-    max-height: calc(100% - 2em);
-    min-height: 30%;
+    width: calc(min(50em, 100vw - 2em));
+    max-height: calc(100vh - 2em);
+    min-height: 30vw;
     background-color: rgba(200, 210, 250, 0.7);
     box-shadow: -7px 5px 8px rgba(0, 0, 0, 0.2);
 }
