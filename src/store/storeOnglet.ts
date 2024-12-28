@@ -4,8 +4,8 @@ export const storeOnglets = createStore({
     state() {
         return {
             onglets: new Map([
-                ["accueil", "à propos de moi"],
-                ["parcours", "mon parcours"],
+                ["accueil", "en bref"],
+                ["parcours", "à propos de moi"],
                 ["projets", "mes projets"],
                 ["cv", "CV"],
                 // ["contact","contact"],

@@ -53,3 +53,7 @@ div.component-app div.content-box div.content {
     background-color: rgba(200, 210, 250, 0.7);
     box-shadow: -7px 5px 8px rgba(0, 0, 0, 0.2);
 }
+
+h1::first-letter {
+    text-transform: capitalize;
+}

@@ -27,6 +27,9 @@ export default defineComponent({
         onglet() {
             return storeOnglets.state.current_onglet;
         },
+        onglet_value() {
+            return storeOnglets.state.onglets.get(this.onglet);
+        }
     },
     template: `
     <div class="component-app">
@@ -37,6 +40,7 @@ export default defineComponent({
                 <div style="display:none; color:blue">
                     Ce site est encore en cours de développement. Pour le moment je travaille sur le fond, la forme viendra après. Toutes mes excuses pour l'aspect esthétique. Je vous souhaite néanmoins une bonne visite !
                 </div>
+                <h1>{{ this.onglet_value }}</h1>
                 <QuiSuisJe v-if="this.onglet=='accueil'" />
                 <Formations v-if="this.onglet=='parcours'" />
                 <Competences v-if="this.onglet=='parcours'" />
