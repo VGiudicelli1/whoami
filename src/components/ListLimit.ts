@@ -24,7 +24,7 @@ export default defineComponent({
         _values() {
             return this.values ? (
                 this.limited ?
-                    this.values.values.splice(0, this._limit)
+                    [...this.values.values].splice(0, this._limit)
                     : this.values.values
             ) : [];
         },
