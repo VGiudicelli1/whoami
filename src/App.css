@@ -1,59 +1,32 @@
-/* div.component-app {
-    display: grid;
-    grid-template-areas: "a exp" "b exp" "c exp" "d exp";
-}
-
-div.component-app>div.component-experiences {
-    grid-area: exp;
-} */
-
 div.component-app {
-    display: grid;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    grid-template-columns: 1fr;
-    grid-template-rows: min-content 1fr;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bg);
     background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 div.component-app div.content-box {
-    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: var(--space-5) var(--space-3);
 }
 
 div.component-app div.content-box div.bg {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 43%;
-    border-radius: 0 10em 0 0;
-    box-shadow: 0 0 10px rgb(234, 184, 162);
-    background-color: rgba(242, 224, 203, 70%);
-    /* overflow-y: scroll; */
+    /* decorative shape removed for a cleaner, single-surface layout */
+    display: none;
 }
 
 div.component-app div.content-box div.content {
-    z-index: 1;
-    position: absolute;
-    top: 1em;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
-    border-radius: 0.4em;
-    padding: 1em;
-    box-sizing: border-box;
-    overflow: scroll;
-    width: calc(min(50em, 100vw - 2em));
-    max-height: calc(100vh - 2em);
-    min-height: 30vw;
-    background-color: rgba(200, 210, 250, 0.7);
-    box-shadow: -7px 5px 8px rgba(0, 0, 0, 0.2);
-}
-
-h1::first-letter {
-    text-transform: capitalize;
+    width: 100%;
+    max-width: var(--max-content-width);
+    height: fit-content;
+    background-color: var(--color-surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    padding: var(--space-5);
 }
