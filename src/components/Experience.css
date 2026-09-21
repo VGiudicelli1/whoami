@@ -1,70 +1,100 @@
 div.component-experience {
-    text-align: center;
-    border: 1px solid black;
-    margin: 4px;
-    padding: 5px;
+    text-align: left;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    margin: 0 0 var(--space-3);
+    padding: var(--space-3) var(--space-4);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.15s ease;
+}
+
+div.component-experience:hover {
+    box-shadow: var(--shadow-md);
 }
 
 div.component-experience div.tags {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    gap: var(--space-1);
+    margin-bottom: var(--space-2);
 }
 
 div.component-experience div.tags span {
-    padding: 2px 1em;
-    border-radius: 1em;
-    background-color: rgba(92, 255, 92, 0.57);
-    margin: 2px 0.5em;
-}
-
-div.component-experience div.photos {
-    overflow-x: scroll;
-    --square: 20em;
-    display: grid;
-    max-width: calc(2 * var(--square));
-    margin: auto;
-}
-
-div.component-experience div.photos div.photo {
-    grid-row: 1;
-    width: var(--square);
-    height: var(--square);
-    display: block;
-    position: relative;
-    /* background-color: gray; */
-    margin: auto;
-}
-
-div.component-experience div.photos div.photo img {
-    max-width: var(--square);
-    max-height: var(--square);
-    position: absolute;
-    display: block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-div.component-experience div.liens {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-div.component-experience div.button {
-    background-color: rgba(198, 198, 198, 0.439);
-    cursor: pointer;
-    margin: 2px 0.5em;
-    padding: 2px 0.5em;
-    border-radius: 1em;
+    padding: 0.15em 0.75em;
+    border-radius: 999px;
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
 }
 
 div.component-experience span.entreprise {
-    font-weight: bold;
-    margin: 2px 1em;
+    display: block;
+    font-weight: 700;
+    color: var(--color-primary);
+    font-size: 1rem;
 }
 
 div.component-experience span.dates {
-    font-style: italic;
-    margin: 2px 1em;
+    display: block;
+    font-style: normal;
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+    margin-bottom: var(--space-1);
+}
+
+div.component-experience h3 {
+    margin: var(--space-1) 0 var(--space-2);
+}
+
+div.component-experience p {
+    margin: 0 0 var(--space-2);
+}
+
+div.component-experience div.photos {
+    overflow-x: auto;
+    --square: 12rem;
+    display: flex;
+    gap: var(--space-2);
+    max-width: 100%;
+    margin: var(--space-2) 0;
+    padding-bottom: var(--space-1);
+}
+
+div.component-experience div.photos div.photo {
+    flex: none;
+    width: var(--square);
+    height: var(--square);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    position: relative;
+    background-color: var(--color-bg);
+    margin: 0;
+}
+
+div.component-experience div.photos div.photo img {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: none;
+}
+
+div.component-experience div.liens {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    margin-bottom: var(--space-2);
+}
+
+div.component-experience div.button {
+    margin-top: var(--space-1);
 }
